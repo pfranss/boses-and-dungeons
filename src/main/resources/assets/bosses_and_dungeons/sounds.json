@@ -1,0 +1,11 @@
+{
+  "boss_killed": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "bosses_and_dungeons:cartoon_big_win",
+        "stream": false
+      }
+    ]
+  }
+}

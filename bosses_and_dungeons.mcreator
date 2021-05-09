@@ -1,0 +1,137 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Saber",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saber"
+    },
+    {
+      "name": "Skelletonboss",
+      "type": "mob",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skelletonboss"
+    },
+    {
+      "name": "SuperSaberMakeItemGlow",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "super_saber_make_item_glow",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SuperSaberEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "super_saber_entity_swings_item",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SuperSaber",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "super_saber"
+    },
+    {
+      "name": "SkelletonbossParticleSpawningCondition",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skelletonboss_particle_spawning_condition",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SkelletonbossEntityDies",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skelletonboss_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Theundeadship",
+      "type": "structure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "theundeadship"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "boss_killed",
+      "files": [
+        "cartoon_big_win"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.bosses_and_dungeons.saber": "Saber-old",
+      "subtitles.boss_killed": "",
+      "subtitles.asdf": "",
+      "item.bosses_and_dungeons.super_saber": "Saber",
+      "item.bosses_and_dungeons.skelletonboss_spawn_egg": "the undead captain Spawn Egg",
+      "entity.bosses_and_dungeons.skelletonboss": "the undead captain"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "bosses_and_dungeons",
+    "modName": "Bosses_and_dungeons",
+    "version": "1.0.0",
+    "author": "hugofransson, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.bossesanddungeons",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
