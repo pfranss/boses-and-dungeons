@@ -89,6 +89,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "theundeadship"
+    },
+    {
+      "name": "Skelletonguard",
+      "type": "mob",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skelletonguard"
     }
   ],
   "variable_elements": [],
@@ -100,15 +109,26 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "skelleton_boss_ambient",
+      "files": [
+        "humanvocalmal_cte03_95.10"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
+      "subtitles.skelleton_boss_ambient": "",
       "item.bosses_and_dungeons.saber": "Saber-old",
       "subtitles.boss_killed": "",
+      "entity.bosses_and_dungeons.skelletonguard": "Skelletonguard",
       "subtitles.asdf": "",
       "item.bosses_and_dungeons.super_saber": "Saber",
       "item.bosses_and_dungeons.skelletonboss_spawn_egg": "the undead captain Spawn Egg",
+      "item.bosses_and_dungeons.skelletonguard_spawn_egg": "Skelletonguard Spawn Egg",
       "entity.bosses_and_dungeons.skelletonboss": "the undead captain"
     }
   },

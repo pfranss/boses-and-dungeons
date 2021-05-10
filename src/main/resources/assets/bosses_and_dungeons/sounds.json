@@ -7,5 +7,14 @@
         "stream": false
       }
     ]
+  },
+  "skelleton_boss_ambient": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "bosses_and_dungeons:humanvocalmal_cte03_95.10",
+        "stream": false
+      }
+    ]
   }
 }

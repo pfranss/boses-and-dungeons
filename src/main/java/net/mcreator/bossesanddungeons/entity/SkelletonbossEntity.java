@@ -117,6 +117,12 @@ public class SkelletonbossEntity extends BossesAndDungeonsModElements.ModElement
 		}
 
 		@Override
+		public net.minecraft.util.SoundEvent getAmbientSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+					.getValue(new ResourceLocation("bosses_and_dungeons:skelleton_boss_ambient"));
+		}
+
+		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.hurt"));
 		}

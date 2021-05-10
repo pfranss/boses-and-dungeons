@@ -47,6 +47,8 @@ public class BossesAndDungeonsModElements {
 	public BossesAndDungeonsModElements() {
 		sounds.put(new ResourceLocation("bosses_and_dungeons", "boss_killed"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("bosses_and_dungeons", "boss_killed")));
+		sounds.put(new ResourceLocation("bosses_and_dungeons", "skelleton_boss_ambient"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("bosses_and_dungeons", "skelleton_boss_ambient")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("bosses_and_dungeons").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
