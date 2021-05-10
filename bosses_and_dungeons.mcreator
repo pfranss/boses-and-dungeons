@@ -98,6 +98,39 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "skelletonguard"
+    },
+    {
+      "name": "Bossesanddungeons",
+      "type": "tab",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bossesanddungeons"
+    },
+    {
+      "name": "Piratehat",
+      "type": "armor",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "piratehat",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "Test",
+      "type": "mob",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
     }
   ],
   "variable_elements": [],
@@ -121,15 +154,22 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.skelleton_boss_ambient": "",
       "item.bosses_and_dungeons.saber": "Saber-old",
-      "subtitles.boss_killed": "",
-      "entity.bosses_and_dungeons.skelletonguard": "Skelletonguard",
+      "entity.bosses_and_dungeons.skelletonguard": "pirate guard",
+      "itemGroup.tabbossesanddungeons": "Bosses and dungeons",
       "subtitles.asdf": "",
-      "item.bosses_and_dungeons.super_saber": "Saber",
+      "entity.bosses_and_dungeons.test": "Test",
       "item.bosses_and_dungeons.skelletonboss_spawn_egg": "the undead captain Spawn Egg",
-      "item.bosses_and_dungeons.skelletonguard_spawn_egg": "Skelletonguard Spawn Egg",
-      "entity.bosses_and_dungeons.skelletonboss": "the undead captain"
+      "entity.bosses_and_dungeons.skelletonboss": "the undead captain",
+      "subtitles.skelleton_boss_ambient": "",
+      "item.bosses_and_dungeons.piratehat_boots": "Piratehat Boots",
+      "subtitles.boss_killed": "",
+      "item.bosses_and_dungeons.piratehat_chestplate": "Piratehat Body",
+      "item.bosses_and_dungeons.super_saber": "Saber",
+      "item.bosses_and_dungeons.piratehat_leggings": "Piratehat Leggings",
+      "item.bosses_and_dungeons.skelletonguard_spawn_egg": "pirate guard Spawn Egg",
+      "item.bosses_and_dungeons.test_spawn_egg": "Test Spawn Egg",
+      "item.bosses_and_dungeons.piratehat_helmet": "Pirate hat Helmet"
     }
   },
   "foldersRoot": {

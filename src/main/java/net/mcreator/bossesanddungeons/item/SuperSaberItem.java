@@ -5,10 +5,10 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import net.mcreator.bossesanddungeons.itemgroup.BossesanddungeonsItemGroup;
 import net.mcreator.bossesanddungeons.BossesAndDungeonsModElements;
 
 @BossesAndDungeonsModElements.ModElement.Tag
@@ -45,7 +45,7 @@ public class SuperSaberItem extends BossesAndDungeonsModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()) {
+		}, 3, -2.2f, new Item.Properties().group(BossesanddungeonsItemGroup.tab).isImmuneToFire()) {
 		}.setRegistryName("super_saber"));
 	}
 }

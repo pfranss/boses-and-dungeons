@@ -6,26 +6,25 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.bossesanddungeons.entity.SkelletonbossEntity;
+import net.mcreator.bossesanddungeons.entity.TestEntity;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class SkelletonbossRenderer {
+public class TestRenderer {
 	public static class ModelRegisterHandler {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
-			RenderingRegistry.registerEntityRenderingHandler(SkelletonbossEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelsteve(), 0.5f) {
+			RenderingRegistry.registerEntityRenderingHandler(TestEntity.entity, renderManager -> {
+				return new MobRenderer(renderManager, new Modeltest(), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("bosses_and_dungeons:textures/skell.png");
@@ -38,14 +37,14 @@ public class SkelletonbossRenderer {
 	// Made with Blockbench 3.8.4
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
-	public static class Modelsteve extends EntityModel<Entity> {
+	public static class Modeltest extends EntityModel<Entity> {
 		private final ModelRenderer Head;
 		private final ModelRenderer Body;
 		private final ModelRenderer RightArm;
 		private final ModelRenderer LeftArm;
 		private final ModelRenderer RightLeg;
 		private final ModelRenderer LeftLeg;
-		public Modelsteve() {
+		public Modeltest() {
 			textureWidth = 64;
 			textureHeight = 64;
 			Head = new ModelRenderer(this);
@@ -53,6 +52,7 @@ public class SkelletonbossRenderer {
 			setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
 			Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
 			Head.setTextureOffset(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.5F, false);
+			Head.setTextureOffset(32, 0).addBox(-4.0F, -12.0F, -4.0F, 8.0F, 5.0F, 8.0F, 0.5F, false);
 			Body = new ModelRenderer(this);
 			Body.setRotationPoint(0.0F, 0.0F, 0.0F);
 			Body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);
@@ -80,6 +80,11 @@ public class SkelletonbossRenderer {
 		}
 
 		@Override
+		public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+			// previously the render function, render code was moved to a method below
+		}
+
+		@Override
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
 			Head.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -94,15 +99,6 @@ public class SkelletonbossRenderer {
 			modelRenderer.rotateAngleX = x;
 			modelRenderer.rotateAngleY = y;
 			modelRenderer.rotateAngleZ = z;
-		}
-
-		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-			this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-			this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
-			this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
-			this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
-			this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 		}
 	}
 }

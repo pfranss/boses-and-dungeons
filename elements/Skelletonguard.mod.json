@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "mob",
   "definition": {
-    "mobName": "Skelletonguard",
+    "mobName": "pirate guard",
     "mobLabel": "",
     "mobModelName": "Modelskeleton",
     "mobModelTexture": "pirate_guard.png",
@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Bossesanddungeons"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -80,16 +80,16 @@
       "value": ""
     },
     "livingSound": {
-      "value": ""
+      "value": "entity.skeleton.ambient"
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": ""
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": ""
     },
     "stepSound": {
-      "value": ""
+      "value": "entity.skeleton.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {

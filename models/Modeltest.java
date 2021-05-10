@@ -2,7 +2,7 @@
 // Exported for Minecraft version 1.15 - 1.16
 // Paste this class into your mod and generate all required imports
 
-public static class Modelsteve extends EntityModel<Entity> {
+public static class Modeltest extends EntityModel<Entity> {
 	private final ModelRenderer Head;
 	private final ModelRenderer Body;
 	private final ModelRenderer RightArm;
@@ -10,7 +10,7 @@ public static class Modelsteve extends EntityModel<Entity> {
 	private final ModelRenderer RightLeg;
 	private final ModelRenderer LeftLeg;
 
-	public Modelsteve() {
+	public Modeltest() {
 		textureWidth = 64;
 		textureHeight = 64;
 
@@ -19,6 +19,7 @@ public static class Modelsteve extends EntityModel<Entity> {
 		setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
 		Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
 		Head.setTextureOffset(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.5F, false);
+		Head.setTextureOffset(32, 0).addBox(-4.0F, -12.0F, -4.0F, 8.0F, 5.0F, 8.0F, 0.5F, false);
 
 		Body = new ModelRenderer(this);
 		Body.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -51,6 +52,12 @@ public static class Modelsteve extends EntityModel<Entity> {
 	}
 
 	@Override
+	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks,
+			float netHeadYaw, float headPitch) {
+		// previously the render function, render code was moved to a method below
+	}
+
+	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
 			float green, float blue, float alpha) {
 		Head.render(matrixStack, buffer, packedLight, packedOverlay);
@@ -65,15 +72,5 @@ public static class Modelsteve extends EntityModel<Entity> {
 		modelRenderer.rotateAngleX = x;
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
-	}
-
-	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
-		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
-		this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-		this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-		this.Head.rotateAngleY = f3 / (180F / (float) Math.PI);
-		this.Head.rotateAngleX = f4 / (180F / (float) Math.PI);
-		this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
-		this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 	}
 }

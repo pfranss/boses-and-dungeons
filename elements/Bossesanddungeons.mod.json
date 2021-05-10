@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "Bosses and dungeons",
+    "icon": {
+      "value": "CUSTOM:SuperSaber"
+    },
+    "showSearch": false
+  }
+}

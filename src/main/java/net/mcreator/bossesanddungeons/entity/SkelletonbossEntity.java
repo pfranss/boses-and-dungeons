@@ -17,7 +17,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -37,6 +36,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.bossesanddungeons.procedures.SkelletonbossEntityDiesProcedure;
+import net.mcreator.bossesanddungeons.itemgroup.BossesanddungeonsItemGroup;
 import net.mcreator.bossesanddungeons.item.SuperSaberItem;
 import net.mcreator.bossesanddungeons.item.SaberItem;
 import net.mcreator.bossesanddungeons.entity.renderer.SkelletonbossRenderer;
@@ -59,7 +59,7 @@ public class SkelletonbossEntity extends BossesAndDungeonsModElements.ModElement
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -13408768, -13421773, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -13408768, -13421773, new Item.Properties().group(BossesanddungeonsItemGroup.tab))
 				.setRegistryName("skelletonboss_spawn_egg"));
 	}
 
@@ -71,9 +71,10 @@ public class SkelletonbossEntity extends BossesAndDungeonsModElements.ModElement
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.4);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 1000);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 0.3);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -117,14 +118,8 @@ public class SkelletonbossEntity extends BossesAndDungeonsModElements.ModElement
 		}
 
 		@Override
-		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-					.getValue(new ResourceLocation("bosses_and_dungeons:skelleton_boss_ambient"));
-		}
-
-		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.hurt"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
 		}
 
 		@Override
