@@ -38,7 +38,6 @@ import net.minecraft.entity.CreatureAttribute;
 import net.mcreator.bossesanddungeons.procedures.SkelletonbossEntityDiesProcedure;
 import net.mcreator.bossesanddungeons.itemgroup.BossesanddungeonsItemGroup;
 import net.mcreator.bossesanddungeons.item.SuperSaberItem;
-import net.mcreator.bossesanddungeons.item.SaberItem;
 import net.mcreator.bossesanddungeons.entity.renderer.SkelletonbossRenderer;
 import net.mcreator.bossesanddungeons.BossesAndDungeonsModElements;
 
@@ -88,7 +87,7 @@ public class SkelletonbossEntity extends BossesAndDungeonsModElements.ModElement
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(SaberItem.block, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(SuperSaberItem.block, (int) (1)));
 		}
 
 		@Override

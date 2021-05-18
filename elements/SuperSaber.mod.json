@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "saber3",
-    "customModelName": "Normal",
+    "customModelName": "saber_of_legends:default",
     "name": "Saber",
     "specialInfo": [],
     "creativeTab": {

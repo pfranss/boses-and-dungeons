@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bosses_and_dungeons:items/saber3"
+    "layer0": "bosses_and_dungeons:items/laser"
   }
 }

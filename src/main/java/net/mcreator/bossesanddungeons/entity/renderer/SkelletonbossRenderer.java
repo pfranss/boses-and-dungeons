@@ -25,10 +25,10 @@ public class SkelletonbossRenderer {
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(SkelletonbossEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelsteve(), 0.5f) {
+				return new MobRenderer(renderManager, new Modelundead_captain(), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("bosses_and_dungeons:textures/skell.png");
+						return new ResourceLocation("bosses_and_dungeons:textures/undead_captain.png");
 					}
 				};
 			});
@@ -38,21 +38,57 @@ public class SkelletonbossRenderer {
 	// Made with Blockbench 3.8.4
 	// Exported for Minecraft version 1.15 - 1.16
 	// Paste this class into your mod and generate all required imports
-	public static class Modelsteve extends EntityModel<Entity> {
+	public static class Modelundead_captain extends EntityModel<Entity> {
 		private final ModelRenderer Head;
+		private final ModelRenderer rim_r1;
+		private final ModelRenderer rim_r2;
+		private final ModelRenderer feather_r1;
 		private final ModelRenderer Body;
 		private final ModelRenderer RightArm;
 		private final ModelRenderer LeftArm;
 		private final ModelRenderer RightLeg;
 		private final ModelRenderer LeftLeg;
-		public Modelsteve() {
+		public Modelundead_captain() {
 			textureWidth = 64;
-			textureHeight = 64;
+			textureHeight = 96;
 			Head = new ModelRenderer(this);
 			Head.setRotationPoint(0.0F, 0.0F, 0.0F);
 			setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
+			Head.setTextureOffset(0, 0).addBox(-7.5F, -6.9999F, 2.0F, 2.0F, 0.0F, 3.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(-7.0F, -6.9999F, 0.75F, 1.0F, 0.0F, 1.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(-5.0F, -6.9999F, -4.0F, 1.0F, 0.0F, 2.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(-6.0F, -6.9998F, -1.75F, 2.0F, 0.0F, 6.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(5.5F, -6.9999F, 2.0F, 2.0F, 0.0F, 3.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(6.0F, -6.9999F, 0.75F, 1.0F, 0.0F, 1.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(4.0F, -6.9999F, -4.0F, 1.0F, 0.0F, 2.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(4.0F, -6.9998F, -1.75F, 2.0F, 0.0F, 6.0F, 0.0F, false);
+			Head.setTextureOffset(0, 0).addBox(-7.0F, -7.0F, 4.5F, 14.0F, 0.0F, 1.0F, 0.0F, false);
+			Head.setTextureOffset(35, 83).addBox(-7.0F, -11.0F, 5.5F, 14.0F, 4.0F, 0.0F, 0.0F, false);
+			Head.setTextureOffset(36, 70).addBox(-4.0F, -6.9999F, -6.5F, 8.0F, 0.0F, 2.0F, 0.0F, false);
+			Head.setTextureOffset(33, 65).addBox(-3.0F, -6.9999F, -9.0F, 6.0F, 0.0F, 2.0F, 0.0F, false);
+			Head.setTextureOffset(28, 86).addBox(-4.0F, -6.9997F, -5.0F, 8.0F, 0.0F, 10.0F, 0.0F, false);
+			Head.setTextureOffset(34, 86).addBox(-4.0F, -10.0F, -3.5F, 8.0F, 3.0F, 7.0F, 0.0F, false);
+			Head.setTextureOffset(35, 73).addBox(-4.0F, -9.0F, -4.5F, 8.0F, 2.0F, 1.0F, 0.0F, false);
+			Head.setTextureOffset(46, 93).addBox(-4.0F, -9.0F, 3.5F, 8.0F, 2.0F, 1.0F, 0.0F, false);
 			Head.setTextureOffset(0, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
 			Head.setTextureOffset(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.5F, false);
+			rim_r1 = new ModelRenderer(this);
+			rim_r1.setRotationPoint(1.5F, -7.0F, -7.0F);
+			Head.addChild(rim_r1);
+			setRotationAngle(rim_r1, 0.0F, 0.3927F, 0.0F);
+			rim_r1.setTextureOffset(0, 64).addBox(1.46F, -4.0F, -1.8F, 0.0F, 4.0F, 14.0F, 0.0F, false);
+			rim_r1.setTextureOffset(0, 0).addBox(0.46F, 0.0F, -1.8F, 1.0F, 0.0F, 14.0F, 0.0F, false);
+			rim_r2 = new ModelRenderer(this);
+			rim_r2.setRotationPoint(-3.75F, -7.0F, -6.5F);
+			Head.addChild(rim_r2);
+			setRotationAngle(rim_r2, 0.0F, -0.3927F, 0.0F);
+			rim_r2.setTextureOffset(35, 64).addBox(0.58F, -4.0F, -2.36F, 0.0F, 4.0F, 14.0F, 0.0F, false);
+			rim_r2.setTextureOffset(0, 0).addBox(0.58F, 0.0F, -2.36F, 1.0F, 0.0F, 14.0F, 0.0F, false);
+			feather_r1 = new ModelRenderer(this);
+			feather_r1.setRotationPoint(-4.0F, -9.0F, 3.0F);
+			Head.addChild(feather_r1);
+			setRotationAngle(feather_r1, 0.0F, -0.7854F, 0.0F);
+			feather_r1.setTextureOffset(10, 72).addBox(1.0F, -7.5F, -2.0F, 0.0F, 8.0F, 10.0F, 0.0F, false);
 			Body = new ModelRenderer(this);
 			Body.setRotationPoint(0.0F, 0.0F, 0.0F);
 			Body.setTextureOffset(16, 16).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);

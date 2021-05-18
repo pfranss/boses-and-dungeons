@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Saber",
-      "type": "item",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "saber"
-    },
-    {
       "name": "Skelletonboss",
       "type": "mob",
       "sortid": 2,
@@ -131,6 +122,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "test"
+    },
+    {
+      "name": "Blastrifle",
+      "type": "gun",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blastrifle"
+    },
+    {
+      "name": "Laser",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "laser"
     }
   ],
   "variable_elements": [],
@@ -154,14 +163,15 @@
   ],
   "language_map": {
     "en_us": {
-      "item.bosses_and_dungeons.saber": "Saber-old",
       "entity.bosses_and_dungeons.skelletonguard": "pirate guard",
       "itemGroup.tabbossesanddungeons": "Bosses and dungeons",
       "subtitles.asdf": "",
       "entity.bosses_and_dungeons.test": "Test",
       "item.bosses_and_dungeons.skelletonboss_spawn_egg": "the undead captain Spawn Egg",
       "entity.bosses_and_dungeons.skelletonboss": "the undead captain",
+      "item.bosses_and_dungeons.blastrifle": "Blastrifle",
       "subtitles.skelleton_boss_ambient": "",
+      "item.bosses_and_dungeons.laser": "Laser",
       "item.bosses_and_dungeons.piratehat_boots": "Piratehat Boots",
       "subtitles.boss_killed": "",
       "item.bosses_and_dungeons.piratehat_chestplate": "Piratehat Body",

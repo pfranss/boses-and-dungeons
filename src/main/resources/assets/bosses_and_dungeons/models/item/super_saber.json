@@ -1,6 +1,8 @@
 {
-  "parent": "item/handheld",
+  "parent": "bosses_and_dungeons:custom/saber_of_legends",
   "textures": {
-    "layer0": "bosses_and_dungeons:items/saber3"
+    "0": "bosses_and_dungeons:blocks/saber_of_legends",
+    "missing": "bosses_and_dungeons:blocks/",
+    "particle": "bosses_and_dungeons:items/saber3"
   }
 }
