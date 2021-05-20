@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "bosses_and_dungeons:custom/laser",
   "textures": {
-    "layer0": "bosses_and_dungeons:items/laser"
+    "0": "bosses_and_dungeons:blocks/laser1",
+    "particle": "bosses_and_dungeons:items/laser"
   }
 }

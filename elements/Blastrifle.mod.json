@@ -2,10 +2,10 @@
   "_fv": 18,
   "_type": "gun",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "blast_rifle",
-    "customModelName": "Normal",
-    "name": "Blastrifle",
+    "customModelName": "blast_rifl:default",
+    "name": "Blast rifle",
     "specialInfo": [
       "it's shooting laser"
     ],
@@ -16,7 +16,7 @@
     "ammoItem": {
       "value": ""
     },
-    "shootConstantly": false,
+    "shootConstantly": true,
     "usageCount": 100,
     "actionSound": {
       "value": ""

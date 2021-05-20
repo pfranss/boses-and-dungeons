@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "laser",
-    "customModelName": "Normal",
+    "customModelName": "laser:default",
     "name": "Laser",
     "rarity": "COMMON",
     "creativeTab": {

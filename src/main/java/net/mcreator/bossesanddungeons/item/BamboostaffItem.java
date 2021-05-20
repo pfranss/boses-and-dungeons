@@ -5,25 +5,27 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.bossesanddungeons.itemgroup.BossesanddungeonsItemGroup;
 import net.mcreator.bossesanddungeons.BossesAndDungeonsModElements;
 
 @BossesAndDungeonsModElements.ModElement.Tag
-public class SuperSaberItem extends BossesAndDungeonsModElements.ModElement {
-	@ObjectHolder("bosses_and_dungeons:super_saber")
+public class BamboostaffItem extends BossesAndDungeonsModElements.ModElement {
+	@ObjectHolder("bosses_and_dungeons:bamboostaff")
 	public static final Item block = null;
-	public SuperSaberItem(BossesAndDungeonsModElements instance) {
-		super(instance, 3);
+	public BamboostaffItem(BossesAndDungeonsModElements instance) {
+		super(instance, 15);
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 2053;
+				return 1000;
 			}
 
 			public float getEfficiency() {
@@ -31,7 +33,7 @@ public class SuperSaberItem extends BossesAndDungeonsModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 5.5f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {
@@ -43,9 +45,9 @@ public class SuperSaberItem extends BossesAndDungeonsModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(Blocks.BAMBOO, (int) (1)));
 			}
-		}, 3, -2.2f, new Item.Properties().group(BossesanddungeonsItemGroup.tab).isImmuneToFire()) {
-		}.setRegistryName("super_saber"));
+		}, 3, -2f, new Item.Properties().group(BossesanddungeonsItemGroup.tab).isImmuneToFire()) {
+		}.setRegistryName("bamboostaff"));
 	}
 }

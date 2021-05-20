@@ -3,9 +3,9 @@
   "_type": "tool",
   "definition": {
     "renderType": 1,
-    "texture": "saber3",
-    "customModelName": "saber_of_legends:default",
-    "name": "Saber of legends",
+    "texture": "bamboo_staff",
+    "customModelName": "bamboo_staff:default",
+    "name": "Bamboo staff",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:Bossesanddungeons"
@@ -13,13 +13,17 @@
     "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 4.0,
-    "attackSpeed": 1.8,
+    "attackSpeed": 2.0,
     "enchantability": 2,
-    "damageVsEntity": 7.5,
-    "usageCount": 2053,
+    "damageVsEntity": 4.0,
+    "usageCount": 1000,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "Blocks.BAMBOO"
+      }
+    ],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false

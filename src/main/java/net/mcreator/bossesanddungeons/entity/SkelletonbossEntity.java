@@ -18,7 +18,6 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -69,7 +68,7 @@ public class SkelletonbossEntity extends BossesAndDungeonsModElements.ModElement
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.4);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 1000);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
@@ -87,7 +86,6 @@ public class SkelletonbossEntity extends BossesAndDungeonsModElements.ModElement
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(SuperSaberItem.block, (int) (1)));
 		}
 
 		@Override

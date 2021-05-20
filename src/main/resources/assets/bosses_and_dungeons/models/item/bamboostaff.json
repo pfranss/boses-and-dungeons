@@ -1,0 +1,7 @@
+{
+  "parent": "bosses_and_dungeons:custom/bamboo_staff",
+  "textures": {
+    "0": "bosses_and_dungeons:blocks/bamboo_staff",
+    "particle": "bosses_and_dungeons:items/bamboo_staff"
+  }
+}

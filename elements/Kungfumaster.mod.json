@@ -2,10 +2,10 @@
   "_fv": 18,
   "_type": "mob",
   "definition": {
-    "mobName": "Test",
+    "mobName": "Kungfu master",
     "mobLabel": "",
-    "mobModelName": "Modeltest",
-    "mobModelTexture": "skell.png",
+    "mobModelName": "Modelkung_fu_master",
+    "mobModelTexture": "kungfu_master.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,18 +13,18 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -16777216,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -10079488,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Bossesanddungeons"
     },
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -46,14 +46,14 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
-    "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "attackStrength": 5,
+    "attackKnockback": 0.5,
+    "knockbackResistance": 1.0,
+    "movementSpeed": 0.2,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 10,
-    "xpAmount": 0,
+    "health": 1024,
+    "xpAmount": 1500,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -63,19 +63,19 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
     "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
-    "immuneToAnvil": false,
+    "immuneToAnvil": true,
     "immuneToWither": false,
-    "immuneToDragonBreath": false,
+    "immuneToDragonBreath": true,
     "mobDrop": {
       "value": ""
     },
@@ -89,7 +89,7 @@
       "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.ancient_debris.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -109,12 +109,12 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

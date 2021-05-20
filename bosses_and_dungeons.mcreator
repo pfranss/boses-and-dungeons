@@ -115,15 +115,6 @@
       }
     },
     {
-      "name": "Test",
-      "type": "mob",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test"
-    },
-    {
       "name": "Blastrifle",
       "type": "gun",
       "sortid": 12,
@@ -140,6 +131,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "laser"
+    },
+    {
+      "name": "Kungfumaster",
+      "type": "mob",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kungfumaster"
+    },
+    {
+      "name": "Bamboostaff",
+      "type": "tool",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bamboostaff"
     }
   ],
   "variable_elements": [],
@@ -163,22 +172,23 @@
   ],
   "language_map": {
     "en_us": {
+      "entity.bosses_and_dungeons.kungfumaster": "Kungfu master",
+      "item.bosses_and_dungeons.bamboostaff": "Bamboo staff",
       "entity.bosses_and_dungeons.skelletonguard": "pirate guard",
       "itemGroup.tabbossesanddungeons": "Bosses and dungeons",
       "subtitles.asdf": "",
-      "entity.bosses_and_dungeons.test": "Test",
+      "item.bosses_and_dungeons.kungfumaster_spawn_egg": "Kungfu master Spawn Egg",
       "item.bosses_and_dungeons.skelletonboss_spawn_egg": "the undead captain Spawn Egg",
       "entity.bosses_and_dungeons.skelletonboss": "the undead captain",
-      "item.bosses_and_dungeons.blastrifle": "Blastrifle",
+      "item.bosses_and_dungeons.blastrifle": "Blast rifle",
       "subtitles.skelleton_boss_ambient": "",
       "item.bosses_and_dungeons.laser": "Laser",
       "item.bosses_and_dungeons.piratehat_boots": "Piratehat Boots",
       "subtitles.boss_killed": "",
       "item.bosses_and_dungeons.piratehat_chestplate": "Piratehat Body",
-      "item.bosses_and_dungeons.super_saber": "Saber",
+      "item.bosses_and_dungeons.super_saber": "Saber of legends",
       "item.bosses_and_dungeons.piratehat_leggings": "Piratehat Leggings",
       "item.bosses_and_dungeons.skelletonguard_spawn_egg": "pirate guard Spawn Egg",
-      "item.bosses_and_dungeons.test_spawn_egg": "Test Spawn Egg",
       "item.bosses_and_dungeons.piratehat_helmet": "Pirate hat Helmet"
     }
   },
