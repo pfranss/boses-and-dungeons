@@ -1,0 +1,7 @@
+{
+  "parent": "bosses_and_dungeons:custom/light_saber",
+  "textures": {
+    "0": "bosses_and_dungeons:blocks/light_saber",
+    "particle": "bosses_and_dungeons:items/light_saber"
+  }
+}

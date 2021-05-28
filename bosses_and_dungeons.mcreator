@@ -149,6 +149,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "bamboostaff"
+    },
+    {
+      "name": "Lightsaber",
+      "type": "tool",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lightsaber"
+    },
+    {
+      "name": "Thesith",
+      "type": "mob",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thesith"
+    },
+    {
+      "name": "Spiderqueen",
+      "type": "mob",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spiderqueen"
     }
   ],
   "variable_elements": [],
@@ -168,27 +195,41 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "blaster_sound",
+      "files": [
+        "blaster"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
-      "entity.bosses_and_dungeons.kungfumaster": "Kungfu master",
-      "item.bosses_and_dungeons.bamboostaff": "Bamboo staff",
-      "entity.bosses_and_dungeons.skelletonguard": "pirate guard",
-      "itemGroup.tabbossesanddungeons": "Bosses and dungeons",
-      "subtitles.asdf": "",
+      "item.bosses_and_dungeons.thesith_spawn_egg": "The sith Spawn Egg",
+      "subtitles.blaster_sound": "",
       "item.bosses_and_dungeons.kungfumaster_spawn_egg": "Kungfu master Spawn Egg",
+      "item.bosses_and_dungeons.lightsaber": "Light saber",
       "item.bosses_and_dungeons.skelletonboss_spawn_egg": "the undead captain Spawn Egg",
       "entity.bosses_and_dungeons.skelletonboss": "the undead captain",
-      "item.bosses_and_dungeons.blastrifle": "Blast rifle",
-      "subtitles.skelleton_boss_ambient": "",
       "item.bosses_and_dungeons.laser": "Laser",
       "item.bosses_and_dungeons.piratehat_boots": "Piratehat Boots",
       "subtitles.boss_killed": "",
       "item.bosses_and_dungeons.piratehat_chestplate": "Piratehat Body",
-      "item.bosses_and_dungeons.super_saber": "Saber of legends",
       "item.bosses_and_dungeons.piratehat_leggings": "Piratehat Leggings",
       "item.bosses_and_dungeons.skelletonguard_spawn_egg": "pirate guard Spawn Egg",
+      "entity.bosses_and_dungeons.thesith": "The sith",
+      "entity.bosses_and_dungeons.kungfumaster": "Kungfu master",
+      "entity.bosses_and_dungeons.spiderqueen": "Spider queen",
+      "item.bosses_and_dungeons.bamboostaff": "Bamboo staff",
+      "item.bosses_and_dungeons.spiderqueen_spawn_egg": "Spider queen Spawn Egg",
+      "entity.bosses_and_dungeons.skelletonguard": "pirate guard",
+      "itemGroup.tabbossesanddungeons": "Bosses and dungeons",
+      "subtitles.asdf": "",
+      "item.bosses_and_dungeons.blastrifle": "Blast rifle",
+      "subtitles.skelleton_boss_ambient": "",
+      "item.bosses_and_dungeons.super_saber": "Saber of legends",
       "item.bosses_and_dungeons.piratehat_helmet": "Pirate hat Helmet"
     }
   },

@@ -58,7 +58,7 @@ public class BlastrifleItem extends BossesAndDungeonsModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(BossesanddungeonsItemGroup.tab).maxDamage(100));
+			super(new Item.Properties().group(BossesanddungeonsItemGroup.tab).maxDamage(99102));
 			setRegistryName("blastrifle");
 		}
 
@@ -76,7 +76,7 @@ public class BlastrifleItem extends BossesAndDungeonsModElements.ModElement {
 
 		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
-			return UseAction.NONE;
+			return UseAction.EAT;
 		}
 
 		@Override
@@ -167,8 +167,8 @@ public class BlastrifleItem extends BossesAndDungeonsModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")), SoundCategory.PLAYERS, 1,
-				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("bosses_and_dungeons:blaster_sound")),
+				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -187,8 +187,8 @@ public class BlastrifleItem extends BossesAndDungeonsModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")), SoundCategory.PLAYERS, 1,
-				1f / (new Random().nextFloat() * 0.5f + 1));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("bosses_and_dungeons:blaster_sound")),
+				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

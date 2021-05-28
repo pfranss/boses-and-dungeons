@@ -16,5 +16,14 @@
         "stream": false
       }
     ]
+  },
+  "blaster_sound": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "bosses_and_dungeons:blaster",
+        "stream": false
+      }
+    ]
   }
 }

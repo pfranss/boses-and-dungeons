@@ -17,12 +17,12 @@
       "value": ""
     },
     "shootConstantly": true,
-    "usageCount": 100,
+    "usageCount": 99102,
     "actionSound": {
-      "value": ""
+      "value": "CUSTOM:blaster_sound"
     },
     "hasGlow": false,
-    "animation": "none",
+    "animation": "eat",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "bulletPower": 1.2999999999999998,

@@ -1,0 +1,27 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "light_saber",
+    "customModelName": "light_saber:default",
+    "name": "Light saber",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Bossesanddungeons"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.5999999999999999,
+    "enchantability": 2,
+    "damageVsEntity": 6.5,
+    "usageCount": 3000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
