@@ -1,0 +1,7 @@
+{
+  "parent": "bosses_and_dungeons:custom/poisonous_dagger",
+  "textures": {
+    "0": "bosses_and_dungeons:blocks/poisonous_dagger",
+    "particle": "bosses_and_dungeons:items/poisonous_dagger"
+  }
+}

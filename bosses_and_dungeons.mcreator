@@ -176,6 +176,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spiderqueen"
+    },
+    {
+      "name": "Spidertooth",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spidertooth"
+    },
+    {
+      "name": "Poisonousdagger",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poisonousdagger"
+    },
+    {
+      "name": "Stormtrooper",
+      "type": "mob",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stormtrooper"
     }
   ],
   "variable_elements": [],
@@ -219,18 +246,22 @@
       "item.bosses_and_dungeons.piratehat_chestplate": "Piratehat Body",
       "item.bosses_and_dungeons.piratehat_leggings": "Piratehat Leggings",
       "item.bosses_and_dungeons.skelletonguard_spawn_egg": "pirate guard Spawn Egg",
+      "item.bosses_and_dungeons.spidertooth": "Spider tooth",
       "entity.bosses_and_dungeons.thesith": "The sith",
       "entity.bosses_and_dungeons.kungfumaster": "Kungfu master",
       "entity.bosses_and_dungeons.spiderqueen": "Spider queen",
       "item.bosses_and_dungeons.bamboostaff": "Bamboo staff",
       "item.bosses_and_dungeons.spiderqueen_spawn_egg": "Spider queen Spawn Egg",
+      "item.bosses_and_dungeons.poisonousdagger": "Poisonous dagger",
       "entity.bosses_and_dungeons.skelletonguard": "pirate guard",
       "itemGroup.tabbossesanddungeons": "Bosses and dungeons",
       "subtitles.asdf": "",
       "item.bosses_and_dungeons.blastrifle": "Blast rifle",
       "subtitles.skelleton_boss_ambient": "",
+      "entity.bosses_and_dungeons.stormtrooper": "Storm trooper",
       "item.bosses_and_dungeons.super_saber": "Saber of legends",
-      "item.bosses_and_dungeons.piratehat_helmet": "Pirate hat Helmet"
+      "item.bosses_and_dungeons.piratehat_helmet": "Pirate hat Helmet",
+      "item.bosses_and_dungeons.stormtrooper_spawn_egg": "Storm trooper Spawn Egg"
     }
   },
   "foldersRoot": {
